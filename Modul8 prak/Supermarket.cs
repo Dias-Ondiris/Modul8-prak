@@ -8,7 +8,7 @@ namespace Modul8_prak
 {
     public class Supermarket
     {
-        private List<Product> products = new List<Product>();
+        public List<Product> products = new List<Product>();
 
         public void AddProduct(Product product)
         {

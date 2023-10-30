@@ -8,9 +8,9 @@ namespace Modul8_prak
 {
     public class RangeOfArray
     {
-        private int[] array;
-        private int lowerBound;
-        private int upperBound;
+        public int[] array;
+        public int lowerBound;
+        public int upperBound;
 
         public RangeOfArray(int lowerBound, int upperBound)
         {
@@ -20,12 +20,12 @@ namespace Modul8_prak
         }
 
         public int this[int index]
-        {
+        {  
             get
             {
                 if (index < lowerBound || index > upperBound)
                 {
-                    throw new IndexOutOfRangeException("Индекс за пределами диапазона.");
+                    throw new Exception("Индекс за пределами диапазона.");
                 }
                 return array[index - lowerBound];
             }
@@ -33,10 +33,10 @@ namespace Modul8_prak
             {
                 if (index < lowerBound || index > upperBound)
                 {
-                    throw new IndexOutOfRangeException("Индекс за пределами диапазона.");
+                    throw new Exception("Индекс за пределами диапазона.");
                 }
                 array[index - lowerBound] = value;
             }
         }
-    } 
+    }  
 }

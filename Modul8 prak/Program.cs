@@ -20,7 +20,6 @@ namespace Modul8_prak
 
             ////////////////
             ///
-            // Проверка на скидку
             var supermarket = new Supermarket();
             supermarket.AddProduct(new Product("Молоко", 60));
             supermarket.AddProduct(new Product("Хлеб", 40));
